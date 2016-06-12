@@ -1,3 +1,25 @@
 {
-    "private": true
+    "name": "node-slice",
+    "version": "1.0.0",
+    "description": "Short version of your strings!",
+    "author": {
+        "name": "Piotr Kowalski",
+        "email": "piecioshka@gmail.com",
+        "url": "http://piecioshka.pl/"
+    },
+    "scripts": {
+        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/piecioshka/node-slice.git"
+    },
+    "keywords": [
+        "slice",
+        "string",
+        "dots",
+        "cut",
+        "short"
+    ],
+    "main": "./index.js"
 }
