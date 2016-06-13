@@ -1,16 +1,30 @@
 'use strict';
 
+/**
+ * Verify condition, and throw an error on failure.
+ *
+ * @param {boolean} condition
+ * @param {string} [message]
+ */
 function assert(condition, message) {
     if (!condition) {
         throw new Error('Assertion Error' || message);
     }
 }
 
+/**
+ * Remove white spaces on the beginning & at the end.
+ *
+ * @param {string} source
+ * @returns {XML|string|void}
+ */
 function trim(source) {
     return source.replace(/^\s+|\s+$/g, '');
 }
 
 /**
+ * Cut passed string and put 3 dots (...) instead of replace chars.
+ *
  * @param {string} source
  * @param {number} length
  * @param {boolean} [isForce]

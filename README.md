@@ -12,7 +12,7 @@ npm install node-slice
 
 ## Usage
 
-```
+```js
 var slice = require('node-slices');
 
 slice('the best cookie in the world', 9); // => "the best..."
