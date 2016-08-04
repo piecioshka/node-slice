@@ -1,30 +1,43 @@
 {
     "name": "node-slice",
-    "version": "1.0.1",
     "description": "Short version of your strings!",
+    "version": "1.1.0",
+    "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
         "email": "piecioshka@gmail.com",
         "url": "http://piecioshka.pl/"
     },
     "scripts": {
-        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+        "build": "webpack --profile",
+        "watch": "webpack -w",
+        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
+        "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls -v"
+    },
+    "devDependencies": {
+        "coveralls": "^2.11.12",
+        "istanbul": "^0.4.4",
+        "jasmine": "^2.4.1",
+        "json-loader": "^0.5.4",
+        "string-replace-loader": "^1.0.3",
+        "webpack": "^1.13.1"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/piecioshka/node-slice.git"
     },
+    "files": [
+        "index.js",
+        "README.md",
+        "package.json"
+    ],
     "keywords": [
         "slice",
         "string",
         "dots",
         "cut",
         "short"
-    ],
-    "files": [
-        "index.js",
-        "README.md",
-        "package.json"
     ],
     "main": "./index.js"
 }

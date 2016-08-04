@@ -20,5 +20,6 @@ describe('good work', function () {
         expect(slice('ciasteczko', 10)).toEqual('ciasteczko...');
         expect(slice('ciasteczko', 11)).toEqual('ciasteczko');
         expect(slice('the best cookie in the world', 9)).toEqual('the best...');
+        expect(slice('the best cookie in the world', 10)).toEqual('the best...');
     });
 });
