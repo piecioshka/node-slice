@@ -5,7 +5,7 @@
 [![Travis](https://img.shields.io/travis/piecioshka/node-slice.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/node-slice)
 [![Coverage Status](https://coveralls.io/repos/github/piecioshka/node-slice/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/node-slice?branch=master)
 
-> Short version of your strings!
+> :hammer: Short version of your strings!
 
 ## Install
 

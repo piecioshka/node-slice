@@ -1,7 +1,7 @@
 {
     "name": "node-slice",
     "description": "Short version of your strings!",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "license": "MIT",
     "author": {
         "name": "Piotr Kowalski",
@@ -39,5 +39,5 @@
         "cut",
         "short"
     ],
-    "main": "./index.js"
+    "main": "./dist/node-slice.js"
 }
