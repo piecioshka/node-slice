@@ -2,10 +2,10 @@
 
 [![npm version](https://badge.fury.io/js/node-slice.svg)](https://badge.fury.io/js/node-slice)
 ![](https://img.shields.io/npm/dt/node-slice.svg)
-[![Travis](https://img.shields.io/travis/piecioshka/node-slice.svg?maxAge=2592000)](https://travis-ci.org/piecioshka/node-slice)
-[![Coverage Status](https://coveralls.io/repos/github/piecioshka/node-slice/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/node-slice?branch=master)
+[![travis-ci](https://api.travis-ci.com/piecioshka/node-slice.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/node-slice)
+[![coverage](https://coveralls.io/repos/github/piecioshka/node-slice/badge.svg?branch=master)](https://coveralls.io/github/piecioshka/node-slice?branch=master)
 
-> :hammer: Short version of your strings!
+:hammer: Short version of your strings!
 
 ## Install
 
