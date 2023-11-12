@@ -2,14 +2,13 @@
 
 [![npm version](https://badge.fury.io/js/node-slice.svg)](https://badge.fury.io/js/node-slice)
 ![](https://img.shields.io/npm/dt/node-slice.svg)
-[![travis-ci](https://api.travis-ci.com/piecioshka/node-slice.svg?branch=master)](https://app.travis-ci.com/github/piecioshka/node-slice)
 
 :hammer: Short version of your strings!
 
 ## Install
 
-```
-$ npm install node-slice
+```bash
+npm install node-slice
 ```
 
 ## Usage
