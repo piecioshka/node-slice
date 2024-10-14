@@ -12,12 +12,12 @@
         "build": "webpack --profile",
         "watch": "webpack -w",
         "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "istanbul cover jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json"
+        "coverage": "nyc npm run test"
     },
     "devDependencies": {
-        "istanbul": "^0.4.4",
         "jasmine": "^2.4.1",
         "json-loader": "^0.5.4",
+        "nyc": "^17.1.0",
         "string-replace-loader": "^1.0.3",
         "webpack": "^1.13.1"
     },
