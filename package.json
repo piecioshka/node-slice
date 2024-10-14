@@ -12,7 +12,7 @@
         "build": "webpack --profile",
         "watch": "webpack -w",
         "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "nyc npm run test"
+        "coverage": "nyc npm run test && nyc report --reporter=html"
     },
     "devDependencies": {
         "jasmine": "^2.4.1",
