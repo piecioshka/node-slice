@@ -6,7 +6,7 @@
 [![license](https://img.shields.io/npm/l/node-slice.svg)](https://piecioshka.mit-license.org)
 [![github-ci](https://github.com/piecioshka/node-slice/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/node-slice/actions/workflows/testing.yml)
 
-:hammer: Short version of your strings!
+🔨 Short version of your strings!
 
 ## Install
 
