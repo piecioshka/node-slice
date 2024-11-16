@@ -28,7 +28,7 @@ function trim(source: string): string {
 /**
  * Cut passed string and put 3 dots (...) instead of replace chars.
  */
-export default function slice(
+export = function slice(
     source: string,
     length: number,
     isForce = false

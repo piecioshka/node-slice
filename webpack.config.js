@@ -14,8 +14,8 @@ module.exports = {
     output: {
         library: "Slice",
         libraryTarget: "umd",
-        filename: "[name].js",
         path: path.join(__dirname, "dist"),
+        globalObject: 'this',
         clean: true,
     },
 

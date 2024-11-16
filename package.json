@@ -12,6 +12,7 @@
         "check-ts": "tsc --noEmit",
         "prebuild": "rm -rf types/ && tsc --declaration --emitDeclarationOnly --declarationDir types/",
         "build": "webpack",
+        "build:prod": "webpack --mode production --no-devtool",
         "watch": "webpack -w",
         "test": "vitest run",
         "coverage": "vitest run --coverage"
@@ -35,9 +36,12 @@
     },
     "files": [
         "dist",
-        "src",
+        "types",
+        "index.js",
+        "package.json",
+        "LICENSE",
         "README.md",
-        "package.json"
+        "!**/*.spec.*"
     ],
     "keywords": [
         "slice",
@@ -46,6 +50,6 @@
         "cut",
         "short"
     ],
-    "main": "./dist/main.js",
+    "main": "./index.js",
     "types": "./types/index.d.ts"
 }
