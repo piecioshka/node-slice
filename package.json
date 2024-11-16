@@ -9,26 +9,33 @@
         "url": "https://piecioshka.pl/"
     },
     "scripts": {
-        "build": "webpack --profile",
+        "check-ts": "tsc --noEmit",
+        "prebuild": "rm -rf types/ && tsc --declaration --emitDeclarationOnly --declarationDir types/",
+        "build": "webpack",
         "watch": "webpack -w",
-        "test": "jasmine JASMINE_CONFIG_PATH=test/unit/jasmine.json",
-        "coverage": "nyc npm run test && nyc report --reporter=html"
+        "test": "vitest run",
+        "coverage": "vitest run --coverage"
     },
     "devDependencies": {
-        "jasmine": "^2.4.1",
+        "@vitest/coverage-v8": "^2.1.5",
         "json-loader": "^0.5.4",
-        "nyc": "^17.1.0",
-        "string-replace-loader": "^1.0.3",
-        "webpack": "^1.13.1"
+        "string-replace-loader": "^3.1.0",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.6.3",
+        "vitest": "^2.1.5",
+        "webpack": "^5.96.1",
+        "webpack-cli": "^5.1.4"
     },
     "repository": {
         "type": "git",
         "url": "git://github.com/piecioshka/node-slice.git"
     },
+    "engines": {
+        "node": ">=6"
+    },
     "files": [
         "dist",
-        "lib",
-        "index.js",
+        "src",
         "README.md",
         "package.json"
     ],
@@ -39,5 +46,6 @@
         "cut",
         "short"
     ],
-    "main": "./dist/node-slice.js"
+    "main": "./dist/main.js",
+    "types": "./types/index.d.ts"
 }
