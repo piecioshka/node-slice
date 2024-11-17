@@ -18,11 +18,15 @@ npm install node-slice
 ## Usage
 
 ```javascript
+// CommonJS
 const slice = require('node-slice');
+
+// or ES Modules
+import slice from 'node-slice';
 
 slice('the best cookie in the world', 9); // => "the best..."
 ```
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2016
+[The MIT License](https://piecioshka.mit-license.org) @ 2016-2024
