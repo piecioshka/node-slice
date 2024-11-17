@@ -1,50 +1,53 @@
-'use strict';
+"use strict";
 
-var webpack = require('webpack');
-var pkg = require('./package.json');
-var author = pkg.author.name + ' <' + pkg.author.email + '> (' + pkg.author.url + ')';
+const path = require("path");
+const pkg = require("./package.json");
+const author =
+    pkg.author.name + " <" + pkg.author.email + "> (" + pkg.author.url + ")";
 
 module.exports = {
-    entry: {
-        'node-slice': './index.js',
-        'node-slice.min': './index.js'
-    },
+    mode: "development",
+    devtool: "source-map",
+
+    entry: "./src/index.ts",
 
     output: {
-        library: 'Slice',
-        libraryTarget: 'umd',
-        filename: '[name].js',
-        path: './dist/'
+        library: "Slice",
+        libraryTarget: "umd",
+        path: path.join(__dirname, "dist"),
+        globalObject: 'this',
+        clean: true,
     },
-
-    devtool: 'source-map',
 
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.json$/,
-                loader: 'json-loader'
+                loader: "json-loader",
             },
             {
-                test: /\.js$/,
-                loader: 'string-replace-loader',
-                query: {
-                    multiple: [
-                        { search: '$AUTHOR$', replace: author },
-                        { search: '$NAME$', replace: pkg.name },
-                        { search: '$DESCRIPTION$', replace: pkg.description },
-                        { search: '$VERSION$', replace: pkg.version },
-                        { search: '$LICENSE$', replace: pkg.license }
-                    ]
-                }
-            }
-        ]
+                test: /\.ts$/,
+                use: [
+                    {
+                        loader: "ts-loader",
+                    },
+                    {
+                        loader: "string-replace-loader",
+                        options: {
+                            multiple: [
+                                { search: "$AUTHOR$", replace: author },
+                                { search: "$NAME$", replace: pkg.name },
+                                {
+                                    search: "$DESCRIPTION$",
+                                    replace: pkg.description,
+                                },
+                                { search: "$VERSION$", replace: pkg.version },
+                                { search: "$LICENSE$", replace: pkg.license },
+                            ],
+                        },
+                    },
+                ],
+            },
+        ],
     },
-
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            include: /\.min\.js$/,
-            minimize: true
-        })
-    ]
 };

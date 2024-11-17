@@ -1,19 +1,22 @@
 'use strict';
 
-var slice = require('../../../index');
+import slice from './index';
+import { suite, it, expect } from 'vitest';
 
-describe('error handling', function () {
+suite('error handling', function () {
     it('should fail on bad arguments', function () {
         expect(function () {
+            // @ts-expect-error
             slice(null, 1, 'd');
         }).toThrow();
         expect(function () {
+            // @ts-expect-error
             slice('null', 'bla');
         }).toThrow();
     });
 });
 
-describe('good work', function () {
+suite('good work', function () {
     it('should returns dots', function () {
         expect(slice('ciasteczko', 5, true)).toEqual('ciast...');
         expect(slice('ciasteczko', 5)).toEqual('ciast...');

@@ -18,7 +18,7 @@ npm install node-slice
 ## Usage
 
 ```javascript
-var slice = require('node-slice');
+const slice = require('node-slice');
 
 slice('the best cookie in the world', 9); // => "the best..."
 ```
