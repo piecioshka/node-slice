@@ -29,4 +29,4 @@ slice('the best cookie in the world', 9); // => "the best..."
 
 ## License
 
-[The MIT License](https://piecioshka.mit-license.org) @ 2016-2024
+[The MIT License](https://piecioshka.mit-license.org) @ 2016
