@@ -9,13 +9,13 @@
 
 🔨 Short version of your strings!
 
-## Install
+## Usage
+
+Installation:
 
 ```bash
 npm install node-slice
 ```
-
-## Usage
 
 ```javascript
 // CommonJS
