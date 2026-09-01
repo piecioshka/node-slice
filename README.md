@@ -5,7 +5,7 @@
 [![downloads count](https://img.shields.io/npm/dt/node-slice.svg)](https://www.npmjs.com/package/node-slice)
 [![size](https://packagephobia.com/badge?p=node-slice)](https://packagephobia.com/result?p=node-slice)
 [![license](https://img.shields.io/npm/l/node-slice.svg)](https://piecioshka.mit-license.org)
-[![github-ci](https://github.com/piecioshka/node-slice/actions/workflows/testing.yml/badge.svg)](https://github.com/piecioshka/node-slice/actions/workflows/testing.yml)
+[![github-ci](https://github.com/piecioshka/node-slice/actions/workflows/ci.yml/badge.svg)](https://github.com/piecioshka/node-slice/actions/workflows/ci.yml)
 
 🔨 Short version of your strings!
 
